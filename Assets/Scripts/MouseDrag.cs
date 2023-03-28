@@ -7,6 +7,8 @@ public class MouseDrag : MonoBehaviour
     Rigidbody rb;
 
     public float distance;
+
+    public bool touching = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -14,13 +16,21 @@ public class MouseDrag : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z -distance);
+        if(touching == false)
+        {
+            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z - distance);
 
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        transform.position = objPosition;
+            transform.position = objPosition;
 
-        rb.isKinematic = true;
+            rb.isKinematic = true;
+        }
+
+        void OnCollisionEnter(Collision collision)
+        {
+            touching = true;
+        }
     }
 
     private void OnMouseUp()

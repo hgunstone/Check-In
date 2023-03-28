@@ -5,16 +5,30 @@ using UnityEngine;
 public class CheckForTalk : MonoBehaviour
 {
     Camera cam;
-    public bool talkable = false;
+
+    public KeyCode talkKey = KeyCode.E;
 
     float rayDistance = 15;
 
     public float DistanceX = 0.5f;
     public float DistanceY = 0.5f;
 
+    public Animator animator;
+
+    public Dialogue dialogue;
+
+    public bool canTalk = false;
+    public bool talking = false;
+
+    DialogueTrigger dialoguetrigger;
+
+    DialogueManager dialogueManager;
+
     void Start()
     {
         cam = GetComponent<Camera>();
+
+        dialogueManager = GetComponent<DialogueManager>();
     }
 
     void Update()
@@ -26,14 +40,29 @@ public class CheckForTalk : MonoBehaviour
         {
             if (hit.collider.CompareTag("NPC"))
             {
-                Debug.Log("Test");
-
-                talkable = true;
+                animator.SetBool("talkable", true);
+                dialoguetrigger = hit.collider.gameObject.GetComponent<DialogueTrigger>();
+                canTalk = true;
             }
             if (hit.collider.CompareTag("Environment"))
             {
-                talkable = false;
+                animator.SetBool("talkable", false);
+
+                canTalk = false;
             }
         }  
+
+        if(canTalk && Input.GetKeyDown(talkKey))
+        {
+            //start dialogue
+            dialoguetrigger.TriggerDialogue();
+
+            talking = true;
+        }
+
+        if(talking && Input.GetKeyDown(talkKey))
+        {
+            dialogueManager.DisplayNextSentence();
+        }
     }
 }
