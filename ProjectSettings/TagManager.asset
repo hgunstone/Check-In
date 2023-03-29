@@ -7,6 +7,9 @@ TagManager:
   - NPC
   - Environment
   - DialogueManager
+  - Pink Medicine
+  - Blue Medicine
+  - Green Medicine
   layers:
   - Default
   - TransparentFX

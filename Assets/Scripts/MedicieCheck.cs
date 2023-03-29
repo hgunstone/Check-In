@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class MedicieCheck : MonoBehaviour
 {
-    void Update()
+    public GameObject pMed;
+    public GameObject bMed;
+    public GameObject gMed;
+
+    public void OnTriggerStay(Collider other)
     {
-        //OnTriggerStay(Collider other)
+        //if () it is pMed
         {
-            //checks which medicien is there
+
+        }
+
+        //if ()it is bMed
+        {
+
+        }
+
+        //if ()it is gMed
+        {
+
         }
     }
 }
