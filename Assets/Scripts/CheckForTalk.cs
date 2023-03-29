@@ -22,13 +22,15 @@ public class CheckForTalk : MonoBehaviour
 
     DialogueTrigger dialoguetrigger;
 
-    DialogueManager dialogueManager;
+    public DialogueManager dialogueManager;
+
+    public GameObject managerObject;
 
     void Start()
     {
         cam = GetComponent<Camera>();
 
-        dialogueManager = GetComponent<DialogueManager>();
+        dialogueManager = managerObject.GetComponent<DialogueManager>();
     }
 
     void Update()
@@ -52,15 +54,15 @@ public class CheckForTalk : MonoBehaviour
             }
         }  
 
-        if(canTalk && Input.GetKeyDown(talkKey))
+        if(canTalk && !talking && Input.GetKeyDown(talkKey))
         {
-            //start dialogue
             dialoguetrigger.TriggerDialogue();
 
             talking = true;
+            canTalk = false;
         }
 
-        if(talking && Input.GetKeyDown(talkKey))
+        if(canTalk && talking && Input.GetKeyDown(talkKey))
         {
             dialogueManager.DisplayNextSentence();
         }
