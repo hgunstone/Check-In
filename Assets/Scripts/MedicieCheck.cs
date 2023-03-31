@@ -4,25 +4,43 @@ using UnityEngine;
 
 public class MedicieCheck : MonoBehaviour
 {
-    public GameObject pMed;
-    public GameObject bMed;
-    public GameObject gMed;
+    public bool pMedInTrigger;
+    public bool bMedInTrigger;
+    public bool gMedInTrigger;
 
-    public void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        //if () it is pMed
+        if (other.tag == "Pink Medicine")
         {
-
+            pMedInTrigger = true;
         }
 
-        //if ()it is bMed
+        if (other.tag == "Blue Medicine")
         {
-
+            bMedInTrigger = true;
         }
 
-        //if ()it is gMed
+        if (other.tag == "Green Medicine")
         {
+            gMedInTrigger = true;
+        }
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Pink Medicine")
+        {
+            pMedInTrigger = false;
+        }
+
+        if (other.tag == "Blue Medicine")
+        {
+            bMedInTrigger = false;
+        }
+
+        if (other.tag == "Green Medicine")
+        {
+            gMedInTrigger = false;
         }
     }
 }
