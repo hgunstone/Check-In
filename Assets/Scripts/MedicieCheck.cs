@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class MedicieCheck : MonoBehaviour
 {
+    public CheckForTalk checkForTalk;
+
+    public GameObject checkForTalkObject;
+
     public bool pMedInTrigger;
     public bool bMedInTrigger;
     public bool gMedInTrigger;
+
+    private void Start()
+    {
+        checkForTalk = checkForTalkObject.GetComponent<CheckForTalk>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -41,6 +50,17 @@ public class MedicieCheck : MonoBehaviour
         if (other.tag == "Green Medicine")
         {
             gMedInTrigger = false;
+        }
+    }
+
+    void update()
+    {
+        if (checkForTalk.npcName = ("Test NPC"))
+        {
+            if (pMedInTrigger)
+            {
+
+            }
         }
     }
 }

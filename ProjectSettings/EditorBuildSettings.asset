@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: d3fe6ccb660163845a08594473359da6
   - enabled: 1
-    path: Assets/Scenes/Loading.unity
+    path: Assets/Scenes/Loading Scenes/Loading.unity
     guid: 6cb0a745f27578a4aa046440e2fea5b6
   - enabled: 1
     path: Assets/Scenes/Intro - Day 1.unity
     guid: b1aa2f7a0017c7c49907864c66b49f4a
   - enabled: 1
-    path: Assets/Scenes/Loading 1.unity
+    path: Assets/Scenes/Loading Scenes/Loading 1.unity
     guid: 1e78299cfc6cc754886740f64cd40fc1
   - enabled: 1
     path: Assets/Scenes/Scene 1.unity

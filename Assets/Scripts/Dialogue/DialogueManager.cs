@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    public bool talked = false;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -41,6 +43,8 @@ public class DialogueManager : MonoBehaviour
         {
             EndDialogue();
             return;
+
+            talked = true;
         }
 
         string sentence = sentences.Dequeue();

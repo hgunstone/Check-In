@@ -26,6 +26,8 @@ public class CheckForTalk : MonoBehaviour
 
     public GameObject managerObject;
 
+    public string npcName;
+
     void Start()
     {
         cam = GetComponent<Camera>();
@@ -45,6 +47,8 @@ public class CheckForTalk : MonoBehaviour
                 animator.SetBool("talkable", true);
                 dialoguetrigger = hit.collider.gameObject.GetComponent<DialogueTrigger>();
                 canTalk = true;
+
+                npcName = hit.collider.gameObject.name;
             }
             if (hit.collider.CompareTag("Environment"))
             {

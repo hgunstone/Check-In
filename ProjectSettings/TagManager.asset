@@ -10,6 +10,7 @@ TagManager:
   - Pink Medicine
   - Blue Medicine
   - Green Medicine
+  - Button
   layers:
   - Default
   - TransparentFX
