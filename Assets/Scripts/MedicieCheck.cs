@@ -6,15 +6,13 @@ public class MedicieCheck : MonoBehaviour
 {
     public CheckForTalk checkForTalk;
 
-    public GameObject checkForTalkObject;
-
     public bool pMedInTrigger;
     public bool bMedInTrigger;
     public bool gMedInTrigger;
 
     private void Start()
     {
-        checkForTalk = checkForTalkObject.GetComponent<CheckForTalk>();
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -55,11 +53,11 @@ public class MedicieCheck : MonoBehaviour
 
     void update()
     {
-        if (checkForTalk.npcName = ("Test NPC"))
+        if (checkForTalk.npcName == "Test NPC")
         {
             if (pMedInTrigger)
             {
-
+                Debug.Log("Given Medicine");
             }
         }
     }

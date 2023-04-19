@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class MoveNPC : MonoBehaviour
 {
-    public float speed = 3f;
-    void Start()
-    {
-        Vector3 newPosition = new Vector3(4.8f, 2.3f, 35.7f);
+    public Transform target;
+    public float speed;
 
-        transform.Translate(newPosition * speed * Time.deltaTime);
+    void update()
+    {
+        Vector3 a = transform.position;
+        Vector3 b = target.position;
+        transform.position = Vector3.MoveTowards(a, b, speed);
     }
 }
