@@ -51,13 +51,19 @@ public class MedicieCheck : MonoBehaviour
         }
     }
 
-    void update()
+    void Update()
     {
         if (checkForTalk.npcName == "Test NPC")
         {
-            if (pMedInTrigger)
+            // if button is pressed
+            if (pMedInTrigger == true)
             {
-                Debug.Log("Given Medicine");
+                //make the NPC say thanks
+            }
+
+            if(bMedInTrigger || gMedInTrigger) 
+            {
+                //make npc say stuff
             }
         }
     }

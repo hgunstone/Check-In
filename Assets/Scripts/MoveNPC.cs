@@ -7,10 +7,10 @@ public class MoveNPC : MonoBehaviour
     public Transform target;
     public float speed;
 
-    void update()
+    void Update()
     {
-        Vector3 a = transform.position;
-        Vector3 b = target.position;
-        transform.position = Vector3.MoveTowards(a, b, speed);
+        Vector3 currentPos = transform.position;
+        Vector3 targetPos = target.position;
+        transform.position = Vector3.MoveTowards(currentPos, targetPos, speed * Time.deltaTime);
     }
 }
