@@ -1039,7 +1039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176539489}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.40340376, y: 1.6700001, z: 0.670002}
+  m_LocalPosition: {x: -0.40340376, y: 1.67, z: 1.76}
   m_LocalScale: {x: 0.57279, y: 0.57279, z: 0.2964876}
   m_Children: []
   m_Father: {fileID: 488766339}
@@ -1783,11 +1783,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400914941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.0634036, y: 1.31, z: 47.48}
-  m_LocalScale: {x: 6.2287683, y: 0.23040193, z: 2.3032382}
+  m_LocalPosition: {x: 5.0634036, y: 1.31, z: 48.88}
+  m_LocalScale: {x: 6.2287683, y: 0.23040193, z: 3.572092}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407180895 stripped
 GameObject:
@@ -2067,7 +2067,7 @@ Transform:
   - {fileID: 1576591465}
   - {fileID: 176539493}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489629117 stripped
 GameObject:
@@ -3760,7 +3760,7 @@ MonoBehaviour:
     sentences: []
   canTalk: 0
   talking: 0
-  dialogueManager: {fileID: 0}
+  dialogueManager: {fileID: 2089134667}
   managerObject: {fileID: 2089134666}
   npcName: 
 --- !u!114 &963194231
@@ -3777,8 +3777,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
   checkForTalk: {fileID: 963194230}
-  medicieCheck: {fileID: 0}
+  medicieCheck: {fileID: 877887155}
+  dialogueManager: {fileID: 2089134667}
   pressKey: 101
+  done: 0
   DistanceX: 0.5
   DistanceY: 0.5
 --- !u!1 &966938253 stripped
@@ -4721,7 +4723,7 @@ RectTransform:
   m_GameObject: {fileID: 1190379038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.035807353, y: 0.035807353, z: 0.035807353}
+  m_LocalScale: {x: 0.054583106, y: 0.054583106, z: 0.054583106}
   m_Children: []
   m_Father: {fileID: 1031979618}
   m_RootOrder: 1
@@ -4893,7 +4895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262676818}
   m_Layer: 0
-  m_Name: NPC Walk Target
+  m_Name: NPC Start Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6820,6 +6822,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5358203910510919075, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1818044194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818044195}
+  m_Layer: 0
+  m_Name: NPC End Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818044195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818044194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.47, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818535251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1323338757704007346, guid: 85e7637813823504a86ed640d2774f42, type: 3}
@@ -6983,14 +7015,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857891591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af63aa98dc764c45827a14b207b1edd, type: 3}
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Herbert
+  intro:
+    name: NPC #1
     sentences:
-    - Hello mate
-    - Give me pink medicine
+    - Hiya
+    - Hi
+  positive:
+    name: NPC #1
+    sentences:
+    - yay
+    - ty
+  negative:
+    name: NPC #1
+    sentences:
+    - Boo
+    - lol
 --- !u!1 &1859812630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4369740520971196722, guid: 85e7637813823504a86ed640d2774f42, type: 3}
@@ -8610,7 +8652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1262676818}
+  buttonPress: {fileID: 963194231}
+  startTarget: {fileID: 1262676818}
+  endTarget: {fileID: 1818044195}
   speed: 4
 --- !u!1 &2089134666
 GameObject:
@@ -8645,6 +8689,15 @@ MonoBehaviour:
   dialogueText: {fileID: 19653708}
   animator: {fileID: 1754599482}
   talked: 0
+  currentIntro:
+    name: 
+    sentences: []
+  currentPositive:
+    name: 
+    sentences: []
+  currentNegative:
+    name: 
+    sentences: []
 --- !u!4 &2089134668
 Transform:
   m_ObjectHideFlags: 0

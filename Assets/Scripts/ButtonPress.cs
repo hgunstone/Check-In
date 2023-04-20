@@ -8,19 +8,18 @@ public class ButtonPress : MonoBehaviour
 
     public CheckForTalk checkForTalk;
 
-    public MedicieCheck medicieCheck;
+    public MedicineCheck medicieCheck;
+
+    public DialogueManager dialogueManager;
 
     public KeyCode pressKey = KeyCode.E;
 
     float rayDistance = 15;
 
+    public bool done = false;
+
     public float DistanceX = 0.5f;
     public float DistanceY = 0.5f;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -31,21 +30,22 @@ public class ButtonPress : MonoBehaviour
         {
             if (hit.collider.CompareTag("Button") && Input.GetKeyDown(pressKey))
             {
-                if(checkForTalk.npcName == "Test NPC")
+                if (checkForTalk.npcName == "Test NPC")
                 {
-                    //if ()
-                    //{
+                    if (medicieCheck.pMedInTrigger)
+                    {
+                        dialogueManager.TriggerPositiveDialogue();
 
-                    //}
+                        done = true;
+                    }
+
+                    if (!medicieCheck.pMedInTrigger)
+                    {
+                        dialogueManager.TriggerNegativeDialogue();
+
+                        done = true;
+                    }
                 }
-            }
-        }
-
-        if (Physics.Raycast(ray, out hit, rayDistance))
-        {
-            if (!hit.collider.CompareTag("Button"))
-            {
-                
             }
         }
     }

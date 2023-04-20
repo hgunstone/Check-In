@@ -15,9 +15,28 @@ public class DialogueManager : MonoBehaviour
 
     public bool talked = false;
 
+    public Dialogue currentIntro;
+    public Dialogue currentPositive;
+    public Dialogue currentNegative;
+
     void Start()
     {
         sentences = new Queue<string>();
+    }
+
+    public void TriggerIntroDialogue()
+    {
+        StartDialogue(currentIntro);
+    }
+
+    public void TriggerNegativeDialogue()
+    {
+        StartDialogue(currentNegative);
+    }
+
+    public void TriggerPositiveDialogue()
+    {
+        StartDialogue(currentPositive);
     }
 
     public void StartDialogue (Dialogue dialogue)

@@ -20,9 +20,9 @@ public class CheckForTalk : MonoBehaviour
     public bool canTalk = false;
     public bool talking = false;
 
-    DialogueTrigger dialoguetrigger;
-
     public DialogueManager dialogueManager;
+
+    npcDialogue currentDia;
 
     public GameObject managerObject;
 
@@ -45,7 +45,14 @@ public class CheckForTalk : MonoBehaviour
             if (hit.collider.CompareTag("NPC"))
             {
                 animator.SetBool("talkable", true);
-                dialoguetrigger = hit.collider.gameObject.GetComponent<DialogueTrigger>();
+                currentDia = hit.collider.gameObject.GetComponent<npcDialogue>();
+
+                dialogueManager.currentIntro = currentDia.intro;
+
+                dialogueManager.currentPositive = currentDia.positive;
+
+                dialogueManager.currentNegative = currentDia.negative;
+
                 canTalk = true;
 
                 npcName = hit.collider.gameObject.name;
@@ -60,7 +67,7 @@ public class CheckForTalk : MonoBehaviour
 
         if(canTalk && !talking && Input.GetKeyDown(talkKey))
         {
-            dialoguetrigger.TriggerDialogue();
+            dialogueManager.TriggerIntroDialogue();
 
             talking = true;
             canTalk = false;

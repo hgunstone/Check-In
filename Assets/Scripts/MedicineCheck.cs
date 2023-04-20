@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MedicineCheck : MonoBehaviour
+public class MedicieCheck : MonoBehaviour
 {
     public CheckForTalk checkForTalk;
 

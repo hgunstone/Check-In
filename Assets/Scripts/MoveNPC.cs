@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class MoveNPC : MonoBehaviour
 {
-    public Transform target;
+    public ButtonPress buttonPress;
+
+    public Transform startTarget;
+    public Transform endTarget;
+
     public float speed;
 
     void Update()
     {
-        Vector3 currentPos = transform.position;
-        Vector3 targetPos = target.position;
-        transform.position = Vector3.MoveTowards(currentPos, targetPos, speed * Time.deltaTime);
+
+        if(buttonPress.done == false)
+        {
+            Vector3 currentPos = transform.position;
+            Vector3 targetPos = startTarget.position;
+            transform.position = Vector3.MoveTowards(currentPos, targetPos, speed * Time.deltaTime);
+        }
+
+        if (buttonPress.done == true)
+        {
+            Vector3 currentPos = transform.position;
+            Vector3 targetPos = endTarget.position;
+            transform.position = Vector3.MoveTowards(currentPos, targetPos, speed * Time.deltaTime);
+        }
     }
 }
