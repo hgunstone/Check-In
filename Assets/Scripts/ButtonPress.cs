@@ -16,8 +16,6 @@ public class ButtonPress : MonoBehaviour
 
     float rayDistance = 15;
 
-    public bool done = false;
-
     public float DistanceX = 0.5f;
     public float DistanceY = 0.5f;
 
@@ -35,15 +33,11 @@ public class ButtonPress : MonoBehaviour
                     if (medicieCheck.pMedInTrigger)
                     {
                         dialogueManager.TriggerPositiveDialogue();
-
-                        done = true;
                     }
 
                     if (!medicieCheck.pMedInTrigger)
                     {
                         dialogueManager.TriggerNegativeDialogue();
-
-                        done = true;
                     }
                 }
             }
