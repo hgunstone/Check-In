@@ -8560,7 +8560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTarget: {fileID: 1262676818}
   exitTarget: {fileID: 1818044195}
-  t: 0.1
+  t: 0
   speed: 4
 --- !u!1 &2089134666
 GameObject:
