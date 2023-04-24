@@ -17,6 +17,8 @@ public class moveNPC : MonoBehaviour
 
     void Update()
     {
-        
+        Vector3 a = transform.position;
+        Vector3 b = enterTarget.position;
+        transform.position = Vector3.MoveTowards(a, b, speed * Time.deltaTime);
     }
 }
