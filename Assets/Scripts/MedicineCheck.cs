@@ -50,21 +50,4 @@ public class MedicieCheck : MonoBehaviour
             gMedInTrigger = false;
         }
     }
-
-    void Update()
-    {
-        if (checkForTalk.npcName == "Test NPC")
-        {
-            // if button is pressed
-            if (pMedInTrigger == true)
-            {
-                //make the NPC say thanks
-            }
-
-            if(bMedInTrigger || gMedInTrigger) 
-            {
-                //make npc say stuff
-            }
-        }
-    }
 }

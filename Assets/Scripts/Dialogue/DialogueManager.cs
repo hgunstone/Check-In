@@ -13,8 +13,6 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
-    public bool talked = false;
-
     public Dialogue currentIntro;
     public Dialogue currentPositive;
     public Dialogue currentNegative;
@@ -62,8 +60,6 @@ public class DialogueManager : MonoBehaviour
         {
             EndDialogue();
             return;
-
-            talked = true;
         }
 
         string sentence = sentences.Dequeue();
@@ -84,5 +80,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+
     }
 }
