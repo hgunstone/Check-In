@@ -45,12 +45,11 @@ public class CheckForTalk : MonoBehaviour
             if (hit.collider.CompareTag("NPC"))
             {
                 animator.SetBool("talkable", true);
+
                 currentDia = hit.collider.gameObject.GetComponent<NPCDialogue>();
 
                 dialogueManager.currentIntro = currentDia.intro;
-
                 dialogueManager.currentPositive = currentDia.positive;
-
                 dialogueManager.currentNegative = currentDia.negative;
 
                 canTalk = true;
