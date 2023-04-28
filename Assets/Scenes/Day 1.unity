@@ -4026,7 +4026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcNumber: 0
   intro:
     name: 
     sentences: []
@@ -7108,16 +7107,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcNumber: 0
   intro:
-    name: 
-    sentences: []
+    name: NPC 1
+    sentences:
+    - HI
+    - Give Pink
   positive:
-    name: 
-    sentences: []
+    name: NPC 1
+    sentences:
+    - Thanks
+    - Bye
   negative:
-    name: 
-    sentences: []
+    name: NPC 1
+    sentences:
+    - Frick You
+    - Bye
 --- !u!1 &1859812630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4369740520971196722, guid: 85e7637813823504a86ed640d2774f42, type: 3}
