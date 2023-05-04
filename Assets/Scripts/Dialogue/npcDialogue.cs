@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
 {
+    public int npcNumber;
+
     public Dialogue intro;
 
     public Dialogue positive;

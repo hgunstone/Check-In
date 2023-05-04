@@ -4027,20 +4027,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intro:
-    name: NPC #1
-    sentences:
-    - Hiya
-    - Hi
+    name: 
+    sentences: []
   positive:
-    name: NPC #1
-    sentences:
-    - yay
-    - ty
+    name: 
+    sentences: []
   negative:
-    name: NPC #1
-    sentences:
-    - Boo
-    - lol
+    name: 
+    sentences: []
 --- !u!64 &1015431399
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7114,20 +7108,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intro:
-    name: NPC #1
+    name: NPC 1
     sentences:
-    - Hiya
-    - Hi
+    - HI
+    - Give Pink
   positive:
-    name: NPC #1
+    name: NPC 1
     sentences:
-    - yay
-    - ty
+    - Thanks
+    - Bye
   negative:
-    name: NPC #1
+    name: NPC 1
     sentences:
-    - Boo
-    - lol
+    - Frick You
+    - Bye
 --- !u!1 &1859812630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4369740520971196722, guid: 85e7637813823504a86ed640d2774f42, type: 3}

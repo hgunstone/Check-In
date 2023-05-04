@@ -52,9 +52,9 @@ public class CheckForTalk : MonoBehaviour
                 dialogueManager.currentPositive = currentDia.positive;
                 dialogueManager.currentNegative = currentDia.negative;
 
-                canTalk = true;
+                npcNum = hit.collider.gameObject.GetComponent<NPCDialogue>().npcNumber;
 
-                npcNum = hit.collider.gameObject.GetComponent<MoveNPC>().npcNumber;
+                canTalk = true;
             }
             if (hit.collider.CompareTag("Environment"))
             {
