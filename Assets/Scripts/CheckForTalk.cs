@@ -55,6 +55,8 @@ public class CheckForTalk : MonoBehaviour
                 npcNum = hit.collider.gameObject.GetComponent<NPCDialogue>().npcNumber;
 
                 canTalk = true;
+
+
             }
             if (hit.collider.CompareTag("Environment"))
             {
@@ -70,6 +72,8 @@ public class CheckForTalk : MonoBehaviour
 
             talking = true;
             canTalk = false;
+
+            Debug.Log("e press");
         }
 
         if(canTalk && talking && Input.GetKeyDown(talkKey))

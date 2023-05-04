@@ -13,16 +13,21 @@ public class MoveNPC : MonoBehaviour
 
     public float speed;
 
+    public static bool convoOngoing = false;
+
     void Update()
     {
-        if (npcNumber == buttonPress.talked)
+        if (convoOngoing == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, enterTarget.position, speed * Time.deltaTime);
-        }
+            if (npcNumber == buttonPress.talked)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, enterTarget.position, speed * Time.deltaTime);
+            }
 
-        if (npcNumber > buttonPress.talked)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, exitTarget.position, speed * Time.deltaTime);
+            if (npcNumber < buttonPress.talked)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, exitTarget.position, speed * Time.deltaTime);
+            }
         }
     }
 }

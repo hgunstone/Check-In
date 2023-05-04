@@ -10,11 +10,6 @@ public class MedicieCheck : MonoBehaviour
     public bool bMedInTrigger;
     public bool gMedInTrigger;
 
-    private void Start()
-    {
-
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Pink Medicine")

@@ -17,6 +17,10 @@ public class DialogueManager : MonoBehaviour
     public Dialogue currentPositive;
     public Dialogue currentNegative;
 
+    public CheckForTalk checkForTalk;
+
+    public MedicineReset medicineReset;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -39,6 +43,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        Debug.Log(dialogue.name);
+
+        MoveNPC.convoOngoing = true;
+
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -56,13 +64,33 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log("display next sentence");
+
         if (sentences.Count == 0)
         {
+            Debug.Log("convo end");
+
+            //checkForTalk.talking = false;
+
             EndDialogue();
             return;
+
+            
         }
 
         string sentence = sentences.Dequeue();
+
+        if (sentence == "XXX-EndConvo")
+        {
+            //checkForTalk.talking = false;
+            medicineReset.shouldReturn = true;
+            MoveNPC.convoOngoing = false;
+            EndDialogue();
+            return;
+
+            
+        }
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -80,6 +108,5 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-
     }
 }
