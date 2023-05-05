@@ -15,7 +15,7 @@ public class CheckForTalk : MonoBehaviour
 
     public Animator animator;
 
-    public Dialogue dialogue;
+    public Dialogue dialogue;       
 
     public bool canTalk = false;
     public bool talking = false;
@@ -27,6 +27,8 @@ public class CheckForTalk : MonoBehaviour
     public GameObject managerObject;
 
     public int npcNum;
+
+    public int wantedMeds;
 
     void Start()
     {
@@ -53,6 +55,8 @@ public class CheckForTalk : MonoBehaviour
                 dialogueManager.currentNegative = currentDia.negative;
 
                 npcNum = hit.collider.gameObject.GetComponent<NPCDialogue>().npcNumber;
+
+                wantedMeds = hit.collider.gameObject.GetComponent<NPCDialogue>().wantedMedicine;
 
                 canTalk = true;
 

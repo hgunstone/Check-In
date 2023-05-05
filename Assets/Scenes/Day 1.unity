@@ -606,6 +606,49 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8805016789231158977, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &108500315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108500317}
+  - component: {fileID: 108500316}
+  m_Layer: 0
+  m_Name: MedicineReset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &108500316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108500315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b13ef8c40223a4089daf6e93e4381e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &108500317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108500315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.827377, y: 1.9960063, z: 34.27773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &115478119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +3776,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 2089134667}
   managerObject: {fileID: 2089134666}
   npcNum: 0
+  wantedMeds: 0
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4027,6 +4071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcNumber: 1
+  wantedMedicine: 0
   intro:
     name: NPC 2
     sentences:
@@ -5776,7 +5821,7 @@ GameObject:
   - component: {fileID: 1604693405}
   - component: {fileID: 1604693406}
   m_Layer: 0
-  m_Name: Pink Medicine
+  m_Name: Pink Medicine (1)
   m_TagString: Pink Medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5896,12 +5941,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1604693399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b13ef8c40223a4089daf6e93e4381e, type: 3}
+  m_Script: {fileID: 11500000, guid: e92477bc8b0165e40be441a997a473a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medicine: {fileID: 1604693404}
-  startPos: {x: 0, y: 0, z: 0}
-  shouldReturn: 0
+  medNumber: 1
 --- !u!1 &1620071751 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2608267265249037087, guid: 85e7637813823504a86ed640d2774f42, type: 3}
@@ -5956,7 +5999,7 @@ GameObject:
   - component: {fileID: 1631688226}
   - component: {fileID: 1631688232}
   m_Layer: 0
-  m_Name: Blue Medicine
+  m_Name: Blue Medicine (2)
   m_TagString: Blue Medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6076,12 +6119,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631688225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b13ef8c40223a4089daf6e93e4381e, type: 3}
+  m_Script: {fileID: 11500000, guid: e92477bc8b0165e40be441a997a473a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medicine: {fileID: 1631688231}
-  startPos: {x: 0, y: 0, z: 0}
-  shouldReturn: 0
+  medNumber: 2
 --- !u!1 &1653272244 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2281016795305804077, guid: 85e7637813823504a86ed640d2774f42, type: 3}
@@ -6212,7 +6253,7 @@ GameObject:
   - component: {fileID: 1693594958}
   - component: {fileID: 1693594964}
   m_Layer: 0
-  m_Name: Green Medicine
+  m_Name: Green Medicine (3)
   m_TagString: Green Medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6332,12 +6373,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1693594957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b13ef8c40223a4089daf6e93e4381e, type: 3}
+  m_Script: {fileID: 11500000, guid: e92477bc8b0165e40be441a997a473a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medicine: {fileID: 1693594963}
-  startPos: {x: 0, y: 0, z: 0}
-  shouldReturn: 0
+  medNumber: 3
 --- !u!1 &1696984185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -13408224353395002, guid: 85e7637813823504a86ed640d2774f42, type: 3}
@@ -7167,6 +7206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcNumber: 0
+  wantedMedicine: 0
   intro:
     name: NPC 1
     sentences:

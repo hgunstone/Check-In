@@ -64,11 +64,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("display next sentence");
+        
 
         if (sentences.Count == 0)
         {
-            Debug.Log("convo end");
+            
 
             //checkForTalk.talking = false;
 
@@ -82,8 +82,8 @@ public class DialogueManager : MonoBehaviour
 
         if (sentence == "XXX-EndConvo")
         {
-            //checkForTalk.talking = false;
-            medicineReset.shouldReturn = true;
+            checkForTalk.talking = false;
+            //medicineReset.shouldReturn = true;
             MoveNPC.convoOngoing = false;
             EndDialogue();
             return;

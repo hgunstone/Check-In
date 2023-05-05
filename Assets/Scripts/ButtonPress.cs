@@ -34,7 +34,7 @@ public class ButtonPress : MonoBehaviour
             {
                 if (checkForTalk.npcNum == talked)
                 {
-                    if (medicieCheck.pMedInTrigger)
+                    if (medicieCheck.pMedInTrigger)//the medicine the current NPC wants not just pink med
                     {
                         dialogueManager.TriggerPositiveDialogue();
 

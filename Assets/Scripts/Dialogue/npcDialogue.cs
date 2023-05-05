@@ -6,6 +6,8 @@ public class NPCDialogue : MonoBehaviour
 {
     public int npcNumber;
 
+    public int wantedMedicine;
+
     public Dialogue intro;
 
     public Dialogue positive;
