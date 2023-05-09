@@ -32,9 +32,11 @@ public class ButtonPress : MonoBehaviour
         {
             if (hit.collider.CompareTag("Button") && Input.GetKeyDown(pressKey))
             {
+                //medicineReset.shouldReturn = true;
+
                 if (checkForTalk.npcNum == talked)
                 {
-                    if (medicieCheck.pMedInTrigger)//the medicine the current NPC wants not just pink med
+                    if (medicieCheck.pMedInTrigger)
                     {
                         dialogueManager.TriggerPositiveDialogue();
 

@@ -21,6 +21,8 @@ public class DialogueManager : MonoBehaviour
 
     public MedicineReset medicineReset;
 
+    public int dialogueEnded;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -74,21 +76,17 @@ public class DialogueManager : MonoBehaviour
 
             EndDialogue();
             return;
-
-            
         }
 
         string sentence = sentences.Dequeue();
 
         if (sentence == "XXX-EndConvo")
         {
+            dialogueEnded++;
             checkForTalk.talking = false;
-            //medicineReset.shouldReturn = true;
             MoveNPC.convoOngoing = false;
             EndDialogue();
             return;
-
-            
         }
 
         StopAllCoroutines();

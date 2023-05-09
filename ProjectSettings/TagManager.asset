@@ -11,6 +11,8 @@ TagManager:
   - Blue Medicine
   - Green Medicine
   - Button
+  - NPC5
+  - EndTrigger
   layers:
   - Default
   - TransparentFX
