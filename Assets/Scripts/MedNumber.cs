@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class MedNumber : MonoBehaviour
 {
-    public DialogueManager dialogueManager;
+    /*public DialogueManager dialogueManager;
 
     public MedicineCheck medicineCheck;
     public int medNumber;
 
     private void Update()
     {
-        if (dialogueManager.endOfDia == true && !medicineCheck.pMedInTrigger)
-        {
-            dialogueManager.endOfDia = false;
-        }
-
-        if (dialogueManager.endOfDia == true && medicineCheck.pMedInTrigger)
+        if (dialogueManager.endOfDia == true)
         {
             Destroy(gameObject);
+
+            dialogueManager.endOfDia = false;
         }
-    }
+    }*/
 }

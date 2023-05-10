@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class MedicineCheck : MonoBehaviour
 {
-    public CheckForTalk checkForTalk;
-
-    public DialogueManager dialogueManager;
-
     public bool pMedInTrigger;
+
+    GameObject medicineInSlot = null;
+
+    public void RemoveMedicine()
+    {
+        if (medicineInSlot != null)
+        {
+            Destroy(medicineInSlot);
+            medicineInSlot = null;
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Pink Medicine")
         {
             pMedInTrigger = true;
+            medicineInSlot = other.gameObject;
         }
     }
 
@@ -23,19 +31,7 @@ public class MedicineCheck : MonoBehaviour
         if (other.tag == "Pink Medicine")
         {
             pMedInTrigger = false;
-        }
-    }
-
-    private void Update()
-    {
-        if(dialogueManager.endOfDia == true && !pMedInTrigger)
-        {
-            dialogueManager.endOfDia = false;
-        }
-
-        if (dialogueManager.endOfDia == true && pMedInTrigger)
-        {
-            
+            medicineInSlot = null;
         }
     }
 }

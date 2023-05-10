@@ -30,6 +30,8 @@ public class CheckForTalk : MonoBehaviour
 
     public int wantedMeds;
 
+    public bool canOpenChecklist;
+
     void Start()
     {
         cam = GetComponent<Camera>();
@@ -60,13 +62,24 @@ public class CheckForTalk : MonoBehaviour
 
                 canTalk = true;
 
-
+                canOpenChecklist = false;
             }
             if (hit.collider.CompareTag("Environment"))
             {
                 animator.SetBool("talkable", false);
 
                 canTalk = false;
+
+                canOpenChecklist = false;
+            }
+
+            if (hit.collider.CompareTag("Keyboard"))
+            {
+                animator.SetBool("talkable", false);
+
+                canTalk = false;
+
+                canOpenChecklist = true;
             }
         }  
 

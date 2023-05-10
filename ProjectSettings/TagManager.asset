@@ -13,6 +13,7 @@ TagManager:
   - Button
   - NPC5
   - EndTrigger
+  - Keyboard
   layers:
   - Default
   - TransparentFX

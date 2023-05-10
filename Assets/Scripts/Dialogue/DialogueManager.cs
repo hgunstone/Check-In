@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public CheckForTalk checkForTalk;
 
     public MedicineReset medicineReset;
+    MedicineCheck medicineCheck;
 
     public int dialogueEnded;
 
@@ -28,6 +29,21 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        medicineCheck = FindObjectOfType<MedicineCheck>();
+    }
+
+    private void Update()
+    {
+        if (endOfDia && !medicineCheck.pMedInTrigger)
+        {
+            endOfDia = false;
+        }
+        else if (endOfDia && medicineCheck.pMedInTrigger)
+        {
+            medicineCheck.RemoveMedicine();
+
+            endOfDia = false;
+        }
     }
 
     public void TriggerIntroDialogue()
