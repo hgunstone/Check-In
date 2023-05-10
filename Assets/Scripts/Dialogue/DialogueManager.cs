@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
 
     public int dialogueEnded;
 
+    public bool endOfDia;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -61,7 +63,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
-
     }
 
     public void DisplayNextSentence()
@@ -70,10 +71,6 @@ public class DialogueManager : MonoBehaviour
 
         if (sentences.Count == 0)
         {
-            
-
-            //checkForTalk.talking = false;
-
             EndDialogue();
             return;
         }
@@ -83,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         if (sentence == "XXX-EndConvo")
         {
             dialogueEnded++;
+            endOfDia = true;
             checkForTalk.talking = false;
             MoveNPC.convoOngoing = false;
             EndDialogue();

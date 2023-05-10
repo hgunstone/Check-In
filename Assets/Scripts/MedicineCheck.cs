@@ -2,29 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MedicieCheck : MonoBehaviour
+public class MedicineCheck : MonoBehaviour
 {
     public CheckForTalk checkForTalk;
 
+    public DialogueManager dialogueManager;
+
     public bool pMedInTrigger;
-    public bool bMedInTrigger;
-    public bool gMedInTrigger;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Pink Medicine")
         {
             pMedInTrigger = true;
-        }
-
-        if (other.tag == "Blue Medicine")
-        {
-            bMedInTrigger = true;
-        }
-
-        if (other.tag == "Green Medicine")
-        {
-            gMedInTrigger = true;
         }
     }
 
@@ -34,15 +24,18 @@ public class MedicieCheck : MonoBehaviour
         {
             pMedInTrigger = false;
         }
+    }
 
-        if (other.tag == "Blue Medicine")
+    private void Update()
+    {
+        if(dialogueManager.endOfDia == true && !pMedInTrigger)
         {
-            bMedInTrigger = false;
+            dialogueManager.endOfDia = false;
         }
 
-        if (other.tag == "Green Medicine")
+        if (dialogueManager.endOfDia == true && pMedInTrigger)
         {
-            gMedInTrigger = false;
+            
         }
     }
 }

@@ -8,7 +8,7 @@ public class ButtonPress : MonoBehaviour
 
     public CheckForTalk checkForTalk;
 
-    public MedicineCheck medicieCheck;
+    public MedicineCheck medicineCheck;
 
     public DialogueManager dialogueManager;
 
@@ -36,14 +36,14 @@ public class ButtonPress : MonoBehaviour
 
                 if (checkForTalk.npcNum == talked)
                 {
-                    if (medicieCheck.pMedInTrigger)
+                    if (medicineCheck.pMedInTrigger)
                     {
                         dialogueManager.TriggerPositiveDialogue();
 
                         talked++;
                     }
 
-                    if (!medicieCheck.pMedInTrigger)
+                    if (!medicineCheck.pMedInTrigger)
                     {
                         dialogueManager.TriggerNegativeDialogue();
 
