@@ -9,7 +9,7 @@ public class EndDay : MonoBehaviour
 
     private void Update()
     {
-        if(dialogueManager.dialogueEnded == 5)
+        if(dialogueManager.dialogueEnded == 12)
         {
             StartCoroutine(LoadingScene());
         }

@@ -257,7 +257,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -221.97192, y: -0.5706749, z: -280.96478, w: -22.483448}
+  m_margin: {x: -221.97192, y: -27.512646, z: -280.96478, w: -22.483448}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -471,7 +471,7 @@ Transform:
   - {fileID: 149685020}
   - {fileID: 1716767082}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89107509
 GameObject:
@@ -991,6 +991,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2272001217198551621, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &136356141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136356142}
+  - component: {fileID: 136356143}
+  m_Layer: 0
+  m_Name: squirre; tracey_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136356142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136356141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.297, y: 0.29, z: 0}
+  m_LocalScale: {x: 0.36222, y: 0.36222, z: 0.36222}
+  m_Children: []
+  m_Father: {fileID: 1754138405}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &136356143
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136356141}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6002759239317359139, guid: f7eefff493261f544afb7ca5fc7d0261, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.7013931, y: 4.13}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &149685019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,18 +1122,55 @@ MonoBehaviour:
   npcNumber: 2
   wantedMedicine: 0
   intro:
-    name: NPC 3
+    name: 
     sentences:
-    - Mjksdfdkjsd
+    - 'Vain: Wow, that wait was so incredibly long. You guys need to up your efficiency
+      to tend to people.  '
+    - 'You: Well it is the weekday so we are quite busy during this time. I am sorry
+      about the wait though.'
+    - 'You: So what can I do for you today?'
+    - 'Vain: My stomach has been killing me for days on end now. It feels like I
+      am being stabbed constantly. '
+    - 'You: Oh I am sorry to hear that. Where exactly do you feel the pain?'
+    - "Vain: In\u2026 my stomach?"
+    - 'You: Yes I got that but where exactly?'
+    - 'Vain: In the middle.'
+    - 'You: Right. So have you eaten or drank anything suspicious lately? '
+    - 'Vain: No, I actually take care of my body and am currently on a detox diet. '
+    - "You: Okay so it sounds like you may be having stomach pains maybe due to this
+      \u2018diet\u2019 you\u2019re on. "
+    - 'You: I would suggest changing up your diet plan to get a balanced amount of
+      nutritional value in your meal. It may not be necessary to prescribe you any
+      medication. '
+    - 'Vain: If I wanted to talk to a nutritionist I would have gone to one. I am
+      telling you my stomach is hurting really badly and you should take a look at
+      me properly if you want to keep your job.'
+    - 'You: Sir please do not threaten me. I am merely trying to tell you that you
+      seem physically fine. If you were in excruciating pain in the middle of your
+      stomach, you would barely be able to sit up as straight as you are now. '
+    - "Vain: Oh so now you\u2019re trying to make assumptions about me based on my
+      appearance? This is ridiculous. I am telling you I need medicine and you\u2019re
+      trying to explain my own body to me? Just give me the medicine now and stop
+      wasting both of our time with this pointless chatter."
   positive:
-    name: NPC 3
+    name: 
     sentences:
-    - positive
+    - 'You: Okay. Fine. I will prescribe you Buscopan that will help with your pain. '
+    - "Vain: Finally, you\u2019re speaking my language. You also write medical notes
+      for colleges and stuff right? I took a day off just to come here to help with
+      my pain. "
+    - 'You: If you need a note for college, we can write you one. '
+    - 'Vain: Okay thanks. '
     - XXX-EndConvo
   negative:
-    name: NPC 3
+    name: 
     sentences:
-    - negative
+    - "You: I am not going to give you any medication because I can clearly see you
+      don\u2019t need it and that is final. "
+    - 'You: I am afraid your disrespect knows no bounds so I am going to have to
+      ask you to leave as you are hindering the time of other patients. If you refuse
+      to leave I can have security kindly escort you out. '
+    - 'Vain: S-security? W-wait okay okay i am leaving now jeez.'
     - XXX-EndConvo
 --- !u!64 &149685022
 MeshCollider:
@@ -1254,6 +1373,88 @@ Transform:
   m_Father: {fileID: 488766339}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &196358337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 196358338}
+  - component: {fileID: 196358339}
+  m_Layer: 0
+  m_Name: ralphes emotions_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &196358338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196358337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalScale: {x: 0.36782, y: 0.36782, z: 0.36782}
+  m_Children: []
+  m_Father: {fileID: 556277541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &196358339
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196358337}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8210823638962368160, guid: f1d15fc4c2c583f4787113d1bc0a9424, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.07, y: 3.37}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!64 &196715386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1792,7 +1993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &310174070
 MeshCollider:
@@ -1878,6 +2079,150 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4676841020648865891, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &338513955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338513956}
+  - component: {fileID: 338513960}
+  - component: {fileID: 338513959}
+  - component: {fileID: 338513958}
+  - component: {fileID: 338513957}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338513956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338513955}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 948140466}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &338513957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338513955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 6
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Finn: Hello, thank you for seeing me on such a busy day. '
+    - 'You: It''s no problem'
+    - 'Finn: I would usually go to the clinic that is local to me, However it was
+      closed today so i decided to drive out here to get my medication. I kind of
+      need this medicine because I haven''t been feeling  too  well lately without 
+      the medication and  I want to make sure I have enough medication before I run
+      out tomorrow. '
+    - 'Finn: I kind of need this medicine because I haven''t been feeling  too  well
+      lately without  the medication and  I want to make sure I have enough medication
+      before I run out tomorrow. '
+    - 'You: I see, well usually we would need some authorization from the clinic
+      you usually visit. '
+    - 'Finn: Oh is that so. Is there no way I can get my medication now? '
+  positive:
+    name: 
+    sentences:
+    - "You: Well in this case since you\u2019re running low on supplies and your
+      usual clinic is closed, we can prescribe you some escitalopram today and note
+      it down for your clinic to see when it does open back up. "
+    - "Finn: That\u2019s a relief to hear! Thank you so much! "
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: Well I am sorry but due to standard protocol I cannot give you any medicine
+      without a note from your clinic saying I can. They need to be able to monitor
+      your intake and your wellbeing themselves. \r\n"
+    - 'Finn: Hmmm, that does make sense. I guess I will just wait until my local
+      clinic opens up again. Thank you for your time. '
+    - XXX-EndConvo
+--- !u!64 &338513958
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338513955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &338513959
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338513955}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &338513960
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338513955}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &345663760
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2507,6 +2852,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4962075678106821255, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &556277538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556277541}
+  - component: {fileID: 556277540}
+  - component: {fileID: 556277539}
+  m_Layer: 0
+  m_Name: NPC 11 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556277539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556277538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 10
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &556277540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556277538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &556277541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556277538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1878563233}
+  - {fileID: 196358338}
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &560415795
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2596,12 +3005,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566861888}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.427, y: 3.38, z: 41.95}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45537305, y: 4.1401134, z: 16.710838}
   m_LocalScale: {x: 0.076226264, y: 0.076226264, z: 0.076226264}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!64 &566943154
 MeshCollider:
@@ -2800,22 +3209,8 @@ Transform:
   - {fileID: 1012966896}
   - {fileID: 621799064}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &597268604
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556187456994319186}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6358728152654116957, guid: 85e7637813823504a86ed640d2774f42, type: 3}
 --- !u!64 &611208519
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2883,7 +3278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621799063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.36, z: 0}
+  m_LocalPosition: {x: 0, y: 0.304, z: 0}
   m_LocalScale: {x: 0.1185653, y: 0.1185653, z: 0.1185653}
   m_Children: []
   m_Father: {fileID: 581942691}
@@ -2996,6 +3391,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4058579984083777344, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &650067675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650067678}
+  - component: {fileID: 650067677}
+  - component: {fileID: 650067676}
+  m_Layer: 0
+  m_Name: NPC 8 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &650067676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650067675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 7
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &650067677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650067675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &650067678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650067675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1773475399}
+  - {fileID: 1133993275}
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &655094893
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3304,6 +3763,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7074007238773475336, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &770511163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770511164}
+  - component: {fileID: 770511165}
+  m_Layer: 0
+  m_Name: NaomiEmotion1-removebg-preview_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770511164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770511163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.147, z: 0}
+  m_LocalScale: {x: 0.39028, y: 0.39028, z: 0.39028}
+  m_Children: []
+  m_Father: {fileID: 1677969766}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &770511165
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770511163}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5660713865248294508, guid: c0983a6931a563c4ba5d9fc5b34d623b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.91, y: 3.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!64 &778689901
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3407,12 +3948,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802903364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.62, y: 3.36, z: 47.18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7376268, y: 4.1201134, z: 21.940838}
   m_LocalScale: {x: 0.041575354, y: 0.041575354, z: 0.12337903}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &805939732
 GameObject:
@@ -3489,12 +4030,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805939732}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.435, y: 3.359, z: 43.363}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.44737303, y: 4.1191134, z: 18.123837}
   m_LocalScale: {x: 0.07755708, y: 0.07755708, z: 0.07755708}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!64 &807902655
 MeshCollider:
@@ -3836,18 +4377,32 @@ MonoBehaviour:
   npcNumber: 3
   wantedMedicine: 0
   intro:
-    name: NPC 4
+    name: 
     sentences:
-    - sdfuihsdf
+    - 'Cherry: hi'
+    - 'You: How can I help you today?'
+    - 'Cherry: I have been feeling very bad lately. I have been coughing a lot so
+      I would like some cold medicine.'
+    - 'You: Okay well, first of all where are your parents ?'
+    - 'Cherry: Oh they couldn''t come into this appointment with me they are at work'
+    - YouI am afraid you're going to need an adult present if you need cold medicine
+    - "Cherry: I didn\u2019t want to bother my parent\u2019s work with this."
+    - 'You: The whole point of a guardian is for them to make time for you and take
+      care of you regardless of how busy they are.'
+    - 'Cherry: So are you going to give me medicine? I kind of really need it.'
   positive:
-    name: NPC 4
+    name: 
     sentences:
-    - positive
+    - "You: Well although you are only a kid but if you have the correct documents
+      then I don\u2019t feel like it\u2019s necessary to refuse you. Just- lead with
+      the fact that you have documents next time."
+    - 'Cherry: Okay! Thank you. '
     - XXX-EndConvo
   negative:
-    name: NPC 4
+    name: 
     sentences:
-    - nagitve
+    - 'You: No, I am sorry, you need to bring your parents with you next time.'
+    - 'Cherry: Okay.'
     - XXX-EndConvo
 --- !u!64 &902555761
 MeshCollider:
@@ -3940,6 +4495,145 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3350110551997291451, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &920160766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920160767}
+  - component: {fileID: 920160771}
+  - component: {fileID: 920160770}
+  - component: {fileID: 920160769}
+  - component: {fileID: 920160768}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920160767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920160766}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 1002727551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &920160768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920160766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 9
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Kain: Heya!'
+    - 'Kain: I would like to know why my eye has flared up and resurfaced and maybe
+      get some medicine to treat it?'
+    - "You: Ohhh\u2026 that does look really bad. That seems sore and painful. Have
+      you tried disinfecting it at home?"
+    - 'Kain: No I have not. '
+  positive:
+    name: 
+    sentences:
+    - "You: We need to disinfect and treat that with some cream and aspirin right
+      now. If it gets infected it could really mess up your vision again. I am not
+      sure why it\u2019s resurfaced again though."
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
+    - XXX-EndConvo
+--- !u!64 &920160769
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920160766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &920160770
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920160766}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &920160771
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920160766}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &923262670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3982,6 +4676,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1682876273418525818, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &948140463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 948140466}
+  - component: {fileID: 948140465}
+  - component: {fileID: 948140464}
+  m_Layer: 0
+  m_Name: NPC 7 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &948140464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948140463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 6
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &948140465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948140463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &948140466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948140463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 338513956}
+  - {fileID: 1387283546}
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &948347641
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4179,7 +4937,7 @@ Transform:
   - {fileID: 1015431397}
   - {fileID: 2110501390}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &955586656
 GameObject:
@@ -4653,6 +5411,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7508742584237898787, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1002727548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002727551}
+  - component: {fileID: 1002727550}
+  - component: {fileID: 1002727549}
+  m_Layer: 0
+  m_Name: NPC 10 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1002727549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002727548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 9
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &1002727550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002727548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &1002727551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002727548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 920160767}
+  - {fileID: 1550635490}
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1003004497
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4716,18 +5538,32 @@ MonoBehaviour:
   npcNumber: 4
   wantedMedicine: 0
   intro:
-    name: NPC 5
+    name: 
     sentences:
-    - dsfkjhgsdf
+    - 'Kain: Heya!'
+    - 'Kain: I would like to know why my eye has flared up and resurfaced and maybe
+      get some medicine to treat it?'
+    - "You: Ohhh\u2026 that does look really bad. That seems sore and painful. Have
+      you tried disinfecting it at home?"
+    - 'Kain: No I have not. '
   positive:
-    name: NPC 5
+    name: 
     sentences:
-    - POsitive
+    - "You: We need to disinfect and treat that with some cream and aspirin right
+      now. If it gets infected it could really mess up your vision again. I am not
+      sure why it\u2019s resurfaced again though."
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
     - XXX-EndConvo
   negative:
-    name: NPC 5
+    name: 
     sentences:
-    - NEgative
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
     - XXX-EndConvo
 --- !u!64 &1012966898
 MeshCollider:
@@ -4841,19 +5677,33 @@ MonoBehaviour:
   npcNumber: 1
   wantedMedicine: 0
   intro:
-    name: NPC 2
+    name: 
     sentences:
-    - HI
-    - Meds
+    - 'Jasper: H-hi '
+    - "Jas[er: U-um well as you can see my two front teeth is g-growing at a very
+      rapid rate. It\u2019s getting kind of difficult to eat and drink. "
+    - 'You: Hmm this is a pretty unusual length for someone of the rabbit species.'
+    - 'Jasper: S-so what do you suggest?'
+    - "You: Don\u2019t  worry, I am not talking about removing the  entire two front
+      teeth,  just shaving it down enough for it to feel comfortable  again.\r\n"
   positive:
-    name: NPC 2
+    name: 
     sentences:
-    - Thanks
+    - 'You: Here take this medical kit '
+    - 'Jasper: T-Thank you so much ! Have a good day!'
     - XXX-EndConvo
   negative:
-    name: NPC 2
+    name: 
     sentences:
-    - No Thanks
+    - "You: I am sorry but we do not do those kinds of procedures here in this hospital.
+      You may need to go to a hospital that\u2026 caters more to the needs of your
+      type. "
+    - 'Jasper: But I was told this h-hospital took care of many different types of
+      people and animal races alike?'
+    - 'You: You must have  heard  wrong because we do not offer customer service
+      to your kind due to protocol. '
+    - 'Jasper: Pro-Protocol? Ohhh. I think I get it. M-my apologies. I didn''t know
+      i- i had come to the wrong type of hospital. I will get going now.'
     - XXX-EndConvo
 --- !u!64 &1015431399
 MeshCollider:
@@ -5381,6 +6231,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1501624878150026706, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1084679776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1084679777}
+  - component: {fileID: 1084679778}
+  m_Layer: 0
+  m_Name: scarley_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084679777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084679776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.23, z: 0}
+  m_LocalScale: {x: 0.2711954, y: 0.2711954, z: 0.2711954}
+  m_Children: []
+  m_Father: {fileID: 1485467821}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1084679778
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084679776}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6590162044187609093, guid: 58bceb5f2ae57db4faae447f718be010, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.871716, y: 4.5800004}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!64 &1100714449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5530,7 +6462,7 @@ Transform:
   m_LocalScale: {x: -0.017491952, y: 2.6123364, z: 1.599435}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -48.627, z: 0}
 --- !u!64 &1126630931
 MeshCollider:
@@ -5560,6 +6492,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4022041840782652165, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1133993274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1133993275}
+  - component: {fileID: 1133993276}
+  m_Layer: 0
+  m_Name: GilbertEmotion1-transformed_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1133993275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133993274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.177, z: 0}
+  m_LocalScale: {x: 0.14292, y: 0.14292, z: 0.14292}
+  m_Children: []
+  m_Father: {fileID: 650067678}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1133993276
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133993274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1051642985193020260, guid: 0391b2780420a3b4bbcfa41c182bb653, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.19, y: 10.78}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1150069571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,6 +6737,145 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7645884473532268869, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1174062653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174062654}
+  - component: {fileID: 1174062658}
+  - component: {fileID: 1174062657}
+  - component: {fileID: 1174062656}
+  - component: {fileID: 1174062655}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174062654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174062653}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 1485467821}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1174062655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174062653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 11
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Kain: Heya!'
+    - 'Kain: I would like to know why my eye has flared up and resurfaced and maybe
+      get some medicine to treat it?'
+    - "You: Ohhh\u2026 that does look really bad. That seems sore and painful. Have
+      you tried disinfecting it at home?"
+    - 'Kain: No I have not. '
+  positive:
+    name: 
+    sentences:
+    - "You: We need to disinfect and treat that with some cream and aspirin right
+      now. If it gets infected it could really mess up your vision again. I am not
+      sure why it\u2019s resurfaced again though."
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
+    - XXX-EndConvo
+--- !u!64 &1174062656
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174062653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1174062657
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174062653}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1174062658
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174062653}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &1181521714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5902,11 +7055,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202763920}
   m_LocalRotation: {x: 0.09951547, y: -0.70006907, z: -0.09951547, w: 0.70006907}
-  m_LocalPosition: {x: 0.427, y: 3.689, z: 37.745}
-  m_LocalScale: {x: 0.076226264, y: 0.076226264, z: 0.076226264}
+  m_LocalPosition: {x: -0.45537305, y: 4.4491134, z: 12.5058365}
+  m_LocalScale: {x: 0.07622627, y: 0.07622627, z: 0.076226264}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -16.181}
 --- !u!64 &1216635930
 MeshCollider:
@@ -6070,7 +7223,7 @@ Transform:
   - {fileID: 902555759}
   - {fileID: 33048803}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1268261046
 MeshCollider:
@@ -6263,7 +7416,7 @@ Transform:
   m_LocalScale: {x: -0.10514389, y: 2.4611087, z: 1.5685498}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -145.488, z: 0}
 --- !u!64 &1344164865
 MeshCollider:
@@ -6349,6 +7502,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1338839569741494250, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1387283545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387283546}
+  - component: {fileID: 1387283547}
+  m_Layer: 0
+  m_Name: FinnEmotion1-transformed_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387283546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387283545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.28, z: 0}
+  m_LocalScale: {x: 0.12722, y: 0.12722, z: 0.12722}
+  m_Children: []
+  m_Father: {fileID: 948140466}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1387283547
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387283545}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5623618705387100024, guid: 4463c97d030f16d40b5b270a0e10d881, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.58, y: 10.43}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1392730236
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,12 +7659,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392730236}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.435, y: 3.359, z: 36.092}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.44737303, y: 4.1191134, z: 10.852837}
   m_LocalScale: {x: 0.07755708, y: 0.07755708, z: 0.07755708}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!64 &1396519106
 MeshCollider:
@@ -6558,18 +7793,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cool beans
-
-
-
-    dfsd
-
-
-    dsf
-
-    d
-
-    sfsd'
+  m_text: "____________________________________________\n\r\nRules to follow and
+    requirements for patients to meet. \r\nPatients MUST meet all requirements to
+    be served. \r\n\r\nPatient\u2019s documents must be up to date (01/04/23)\r\n\r\nPatients'
+    documents must match up with their face and appearance.\r\n\r\nDo not serve fish-people,
+    they have been proven untrustworthy \r\n\r\nPatients must be able to recall information
+    from their documents without needing to refer to them. (ask DOB and Address if
+    needed).\r\n\r\nDo not serve children under 15 without parental permission or
+    a guardian present with them. This is simply precaution. \r\n\r\nPatients should
+    be able to show obvious injuries at the reception for proof of need of service,
+    if the patient has not got a visible injury, use documentation to determine their
+    needs.\r\n\r\nIf a patient cannot speak clearly and convey their issue, do not
+    waste valuable work hours on them and politely move to the next patient. \r\n\r\nDo
+    not provide medication to patients who are already past their prescriptions.
+    \r\n\r\nFOLLOW THIS LIST AND NOTHING WILL GO WRONG! \r\nIf not you will be fired.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6596,8 +7833,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 2.51
+  m_fontSizeBase: 2.51
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6656,7 +7893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435637523}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Posters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6672,9 +7909,15 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.88237303, y: -0.7601134, z: 25.239162}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 805939734}
+  - {fileID: 1946886005}
+  - {fileID: 566861890}
+  - {fileID: 1202763922}
+  - {fileID: 1392730238}
+  - {fileID: 802903366}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1445387000
 MeshCollider:
@@ -6715,7 +7958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465813780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.377, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0}
   m_LocalScale: {x: 0.30019417, y: 0.30019417, z: 0.30019417}
   m_Children: []
   m_Father: {fileID: 2086850897}
@@ -6800,6 +8043,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4620155213636088089, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1485467818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485467821}
+  - component: {fileID: 1485467820}
+  - component: {fileID: 1485467819}
+  m_Layer: 0
+  m_Name: NPC 12 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1485467819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485467818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 11
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &1485467820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485467818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &1485467821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485467818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1174062654}
+  - {fileID: 1084679777}
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1488529302
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6928,6 +8235,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2698146873215512201, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1550635489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550635490}
+  - component: {fileID: 1550635491}
+  m_Layer: 0
+  m_Name: silver._0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1550635490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550635489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.282, z: 0}
+  m_LocalScale: {x: 0.29566133, y: 0.29566133, z: 0.29566133}
+  m_Children: []
+  m_Father: {fileID: 1002727551}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1550635491
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550635489}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 840430933661867359, guid: 95842d08f58c8bc408e7872d298df0db, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.26, y: 4.83}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!64 &1556870910
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7334,6 +8723,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2365503597955699450, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1677969763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677969766}
+  - component: {fileID: 1677969765}
+  - component: {fileID: 1677969764}
+  m_Layer: 0
+  m_Name: NPC 6 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1677969764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677969763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 5
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &1677969765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677969763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &1677969766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677969763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1831724633}
+  - {fileID: 770511164}
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1689606139
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7762,6 +9215,70 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4094421681414966525, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1754138402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754138405}
+  - component: {fileID: 1754138404}
+  - component: {fileID: 1754138403}
+  m_Layer: 0
+  m_Name: NPC 9 Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1754138403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754138402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5c61ede923f1439b552c34556e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 8
+  buttonPress: {fileID: 963194231}
+  enterTarget: {fileID: 1262676818}
+  exitTarget: {fileID: 1818044195}
+  speed: 4.5
+--- !u!114 &1754138404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754138402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56f1120bb5f7443ac58e29da37742d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 439620523}
+--- !u!4 &1754138405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754138402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: 2.348, z: 35.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2072594080}
+  - {fileID: 136356142}
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754599478
 GameObject:
   m_ObjectHideFlags: 0
@@ -7888,6 +9405,155 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5840284170326959453, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1773475398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1773475399}
+  - component: {fileID: 1773475403}
+  - component: {fileID: 1773475402}
+  - component: {fileID: 1773475401}
+  - component: {fileID: 1773475400}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1773475399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773475398}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 650067678}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1773475400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773475398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 7
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Gilbert: Hello'
+    - 'You: Hi there! '
+    - 'You: What can I do for you today?'
+    - 'Gilbert: My neck has been feeling very sore and kind of itchy lately.'
+    - 'You: Yeah your gills do look very red. Are you having trouble breathing when
+      you go for a swim?'
+    - 'Gilbert: Yeah something like that!'
+    - 'You: Are you allergic to anything?'
+    - 'Gilbert: Not that i know of.'
+    - "You: Well. Usually in cases like these we would get an allergy test done.
+      However if you\u2019ve not been in contact with anything out of the ordinary
+      from your day to day routine then you should be fine."
+    - "Gilbert: Yeah I haven\u2019t really changed anything about my daily life\u2026
+      Do you think it's serious?"
+    - "You: No I don\u2019t think  it\u2019s too serious. You don\u2019t seem to
+      be in excruciating pain."
+    - 'Gilbert: Oh thank god!'
+  positive:
+    name: 
+    sentences:
+    - "Gilbert: Oh thank you so much doc! I am so happy I've been searching for a
+      very long time to get this problem sorted!\r"
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
+    - XXX-EndConvo
+--- !u!64 &1773475401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773475398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1773475402
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773475398}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1773475403
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773475398}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &1777079322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8016,6 +9682,154 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5661195649003995821, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1831724632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831724633}
+  - component: {fileID: 1831724637}
+  - component: {fileID: 1831724636}
+  - component: {fileID: 1831724635}
+  - component: {fileID: 1831724634}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831724633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831724632}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 1677969766}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1831724634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831724632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 5
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Naomi: Hi! My name is Naomi Aponi. I am 7 years old and I like butterflies'
+    - "You: Wow that\u2019s great Miss Aponi! I like butterflies too. Are you here
+      to support your parents?"
+    - 'Naomi: No, I am here to collect medicine for my mumma! '
+    - 'You:  Is your mother here in the clinic right now?'
+    - "Naomi: No, she is at home sleeping because she didn\u2019t feel well. So I
+      thought I should come here alllll by myself and help mumma out by collecting
+      the stuff she needs to make her feel better.  "
+    - "You: You shouldn\u2019t have come to the clinic all by yourself, it's dangerous. "
+    - "Naomi: Don\u2019t worry I can go to school all by myself so this trip is basically
+      nothing to me!"
+    - "You: Okay well\u2026 even then  due to something called protocol I can\u2019t
+      give a child medicine without proper authorization of an adult."
+    - "Naomi: You\u2019re\u2026really not going to give me the medicine? But My mumma
+      really really needs it. If mumma stops talking to me again then i\u2019ll be
+      really really sad. "
+  positive:
+    name: 
+    sentences:
+    - 'You: Okay i will give the medication to you but I will be writing your name
+      down on our system so you have to come with your mother next time when she
+      starts to feel better. Deal? '
+    - 'Naomi: DEAL!!! YAYY! THANK YOU SO MUCH DOCTOR I HOPE MUMMA GETS BETTER SOON
+      WITH THIS. BYEEEEE! '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - 'You: I am sorry Miss Aponi but I can''t give a child some medication without
+      an adult present to confirm the said illness of your mother. This is for safety
+      reasons. '
+    - 'Naomi: NOOOOO YOU BIG MEANIE! I JUST WANT MY MUMMA TO FEEL BETTER! WHY ARE
+      YOU SO AGAINST ME?!?!?! '
+    - XXX-EndConvo
+--- !u!64 &1831724635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831724632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1831724636
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831724632}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1831724637
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831724632}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &1845496348
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8156,26 +9970,40 @@ MonoBehaviour:
   npcNumber: 0
   wantedMedicine: 0
   intro:
-    name: NPC 1
+    name: 
     sentences:
-    - 'Hello, how are you doing today?
+    - 'Irene: Hello, how are you doing today?
 
 '
-    - " I had my surgery done 2 years ago and it was for a Rotator cuff repair. \r\n"
-    - ' I actually know the medicine I am supposed to take for this so could you
-      please just give it to me? I am actually in a hurry.
+    - 'You: Hello, I could be doing better but dealing with difficult customers is
+      a part of the job.
 
 '
+    - 'You: How can I help you today'
+    - 'Irene: I have this very painful scar on my shoulder that has been acting up
+      recently. '
+    - 'You: Is it an open wound?'
+    - 'Irene: No absolutely not, otherwise I would be bleeding everywhere! It was
+      a scar I had done in surgery a long time ago. '
+    - 'Irene: I had my surgery done 2 years ago and it was for a Rotator cuff repair. '
+    - 'You: So the scar is in fact not in a personal space but rather on your shoulder?
+      May I please take a look?'
+    - 'Irene: No, I actually know the medicine I am supposed to take for this so
+      could you please just give it to me? I am actually in a hurry'
   positive:
-    name: NPC 1
+    name: 
     sentences:
-    - Than I knew you were a real sweetheart, thank you.
+    - "You: Okay well since you\u2019re in a hurry I can give you the medicine. Make
+      sure to apply it everyday on the scar tissue. "
+    - 'Irene: I knew you were a real sweetheart, thank you.'
     - XXX-EndConvo
   negative:
-    name: NPC 1
+    name: 
     sentences:
-    - " Okay you jerk. Can\u2019t even appreciate a woman giving you the only warmth
-      you\u2019ll probably ever receive working in a place as run down as this."
+    - "You: I am sorry Ma'am but there\u2019s nothing more I can do for you."
+    - "Irene: Okay you jerk. Can\u2019t even appreciate a woman giving you the only
+      warmth you\u2019ll probably ever receive working in a place as run down as
+      this. "
     - XXX-EndConvo
 --- !u!64 &1859812634
 MeshCollider:
@@ -8229,6 +10057,145 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 341681414943341791, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+--- !u!1 &1878563232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1878563233}
+  - component: {fileID: 1878563237}
+  - component: {fileID: 1878563236}
+  - component: {fileID: 1878563235}
+  - component: {fileID: 1878563234}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1878563233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878563232}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 556277541}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1878563234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878563232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 10
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Kain: Heya!'
+    - 'Kain: I would like to know why my eye has flared up and resurfaced and maybe
+      get some medicine to treat it?'
+    - "You: Ohhh\u2026 that does look really bad. That seems sore and painful. Have
+      you tried disinfecting it at home?"
+    - 'Kain: No I have not. '
+  positive:
+    name: 
+    sentences:
+    - "You: We need to disinfect and treat that with some cream and aspirin right
+      now. If it gets infected it could really mess up your vision again. I am not
+      sure why it\u2019s resurfaced again though."
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
+    - XXX-EndConvo
+--- !u!64 &1878563235
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878563232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1878563236
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878563232}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1878563237
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878563232}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &1879375735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8319,7 +10286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 6.3, y: -5.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891731687
@@ -8342,7 +10309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Checklist
+  m_text: 'RAAH Hospital Checklist '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8369,8 +10336,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.06
-  m_fontSizeBase: 14.06
+  m_fontSize: 10.62
+  m_fontSizeBase: 10.62
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8405,7 +10372,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 20.573236, y: 0, z: 21.778845, w: 70.870415}
+  m_margin: {x: -18.388227, y: 0, z: -20.006044, w: 70.870415}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8527,12 +10494,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946886003}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.43, y: 2.867, z: 39.097}
-  m_LocalScale: {x: 0.07349463, y: 0.07349463, z: 0.21810266}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45237303, y: 3.6271136, z: 13.857838}
+  m_LocalScale: {x: 0.07349463, y: 0.07349463, z: 0.21810268}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 1435637523}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!64 &1946920361
 MeshCollider:
@@ -8670,7 +10637,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1294284738371021749, guid: 85e7637813823504a86ed640d2774f42, type: 3}
+  - {fileID: 2100000, guid: 1a52f052d3bd97e42aa5db14a8e6f736, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9033,6 +11000,145 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2072594079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072594080}
+  - component: {fileID: 2072594084}
+  - component: {fileID: 2072594083}
+  - component: {fileID: 2072594082}
+  - component: {fileID: 2072594081}
+  m_Layer: 0
+  m_Name: Test NPC 5
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072594080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072594079}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 1, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 1754138405}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2072594081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072594079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14344f1ef7b3f74abc04080650ebde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcNumber: 8
+  wantedMedicine: 0
+  intro:
+    name: 
+    sentences:
+    - 'Kain: Heya!'
+    - 'Kain: I would like to know why my eye has flared up and resurfaced and maybe
+      get some medicine to treat it?'
+    - "You: Ohhh\u2026 that does look really bad. That seems sore and painful. Have
+      you tried disinfecting it at home?"
+    - 'Kain: No I have not. '
+  positive:
+    name: 
+    sentences:
+    - "You: We need to disinfect and treat that with some cream and aspirin right
+      now. If it gets infected it could really mess up your vision again. I am not
+      sure why it\u2019s resurfaced again though."
+    - 'Kain: Ah i see, well thanks for the medicine anyways! See you later. '
+    - XXX-EndConvo
+  negative:
+    name: 
+    sentences:
+    - "You: No, Your level of injury isn\u2019t enough to waste medical supplies
+      on. "
+    - 'Kain: But i think this really will get worse and affect my vision later on? '
+    - 'You: Then I suggest you try your luck elsewhere, maybe a family doctor?'
+    - 'Kain: How rich do you think I am to afford a family doctor? What the hell.
+      You know maybe I didn''t want medicine from a place that judges solely on appearances
+      in the first place. Good day.'
+    - XXX-EndConvo
+--- !u!64 &2072594082
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072594079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2072594083
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072594079}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2072594084
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072594079}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &2073360497
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9106,7 +11212,7 @@ Transform:
   - {fileID: 1857891595}
   - {fileID: 1465813781}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2086850898
 MonoBehaviour:
@@ -10417,7 +12523,6 @@ Transform:
   - {fileID: 8094836087414971284}
   - {fileID: 2676772260816724140}
   - {fileID: 2288332808989743629}
-  - {fileID: 1695366544308365369}
   - {fileID: 1880202610510667847}
   - {fileID: 7007328928624416306}
   - {fileID: 4027828538229701157}
@@ -10452,25 +12557,6 @@ Transform:
   m_Father: {fileID: 543450651838780906}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &556187456994319186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1695366544308365369}
-  - component: {fileID: 7486955763031567978}
-  - component: {fileID: 7850915061488063094}
-  - component: {fileID: 597268604}
-  m_Layer: 0
-  m_Name: pSphere3
-  m_TagString: Environment
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &556530177605015529
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,7 +12690,7 @@ Transform:
   m_LocalScale: {x: 4.929505, y: 6.647861, z: 2.2965827}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 228
+  m_RootOrder: 227
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &656882777998530465
 GameObject:
@@ -12795,20 +14881,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8257969038393894929}
   m_Mesh: {fileID: 7824153461562522279, guid: 85e7637813823504a86ed640d2774f42, type: 3}
---- !u!4 &1695366544308365369
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556187456994319186}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022588281, y: 0.025629923, z: 0.006222783}
-  m_LocalScale: {x: 1.0639426, y: 1.0639426, z: 1.0639426}
-  m_Children: []
-  m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 219
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699260832380485922
 GameObject:
   m_ObjectHideFlags: 0
@@ -13067,7 +15139,7 @@ Transform:
   m_LocalScale: {x: 0.3353846, y: 0.3353846, z: 0.3353846}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 220
+  m_RootOrder: 219
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1897313730213533512
 Transform:
@@ -17655,7 +19727,7 @@ Transform:
   m_LocalScale: {x: 0.22100379, y: 0.40024397, z: 0.40024397}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 222
+  m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4051493850973632653
 GameObject:
@@ -21348,7 +23420,7 @@ Transform:
   m_LocalScale: {x: 0.61086637, y: 0.61086637, z: 0.61086637}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 227
+  m_RootOrder: 226
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5948720790698981907
 MeshRenderer:
@@ -23588,7 +25660,7 @@ Transform:
   m_LocalScale: {x: 0.21477643, y: 0.3181677, z: 0.3181677}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 221
+  m_RootOrder: 220
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7015961630072258234
 MeshFilter:
@@ -24449,7 +26521,7 @@ Transform:
   m_LocalScale: {x: 0.41806477, y: 0.41806477, z: 0.41806477}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 224
+  m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7379349515983515631
 MeshFilter:
@@ -24701,16 +26773,8 @@ Transform:
   m_LocalScale: {x: 0.61086637, y: 0.61086637, z: 0.61086637}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 226
+  m_RootOrder: 225
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7486955763031567978
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556187456994319186}
-  m_Mesh: {fileID: -6358728152654116957, guid: 85e7637813823504a86ed640d2774f42, type: 3}
 --- !u!23 &7497686722637263564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24865,7 +26929,7 @@ Transform:
   m_LocalScale: {x: 0.3353846, y: 0.3353846, z: 0.3353846}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 223
+  m_RootOrder: 222
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7557681771955175665
 MeshFilter:
@@ -25343,7 +27407,7 @@ Transform:
   m_LocalScale: {x: 0.41806477, y: 0.41806477, z: 0.41806477}
   m_Children: []
   m_Father: {fileID: 543450651838780906}
-  m_RootOrder: 225
+  m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7778762248280045676
 MeshFilter:
@@ -25459,47 +27523,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7438847500181694714}
   m_Mesh: {fileID: 3215790235838048771, guid: 85e7637813823504a86ed640d2774f42, type: 3}
---- !u!23 &7850915061488063094
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556187456994319186}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -1294284738371021749, guid: 85e7637813823504a86ed640d2774f42, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &7858302940489888918
 Transform:
   m_ObjectHideFlags: 0
